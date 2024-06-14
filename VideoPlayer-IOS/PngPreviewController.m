@@ -30,7 +30,6 @@
     if (self) {
         _previewView = [[PreviewView alloc] initWithFrame:frame filePath:path];
         _previewView.contentMode = UIViewContentModeScaleAspectFill;
-//        _previewView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin;
         self.view.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1.0];
         [self.view insertSubview:_previewView atIndex:0];
     }
