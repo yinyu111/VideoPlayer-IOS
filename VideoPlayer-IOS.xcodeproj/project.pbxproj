@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6040AD5B2C1C39F7002B7405 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6040AD5A2C1C39F7002B7405 /* main.m */; };
 		605215EB2C1AE33800C409FA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 605215EA2C1AE33800C409FA /* ViewController.xib */; };
 		605215F12C1AE3CB00C409FA /* PngPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605215ED2C1AE3CB00C409FA /* PngPreviewController.m */; };
 		605215F22C1AE3CB00C409FA /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 605215EF2C1AE3CB00C409FA /* CommonUtil.m */; };
@@ -56,10 +57,10 @@
 		60C11E132C19E32C0046F281 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C11E122C19E32C0046F281 /* ViewController.m */; };
 		60C11E182C19E32C0046F281 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60C11E172C19E32C0046F281 /* Assets.xcassets */; };
 		60C11E1B2C19E32C0046F281 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 60C11E1A2C19E32C0046F281 /* Base */; };
-		60C11E1E2C19E32C0046F281 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C11E1D2C19E32C0046F281 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6040AD5A2C1C39F7002B7405 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		605215EA2C1AE33800C409FA /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		605215EC2C1AE3CB00C409FA /* PngPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PngPreviewController.h; sourceTree = "<group>"; };
 		605215ED2C1AE3CB00C409FA /* PngPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PngPreviewController.m; sourceTree = "<group>"; };
@@ -127,7 +128,6 @@
 		60C11E172C19E32C0046F281 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60C11E1A2C19E32C0046F281 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60C11E1C2C19E32C0046F281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60C11E1D2C19E32C0046F281 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +260,7 @@
 		60C11E0A2C19E32C0046F281 /* VideoPlayer-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				6040AD5A2C1C39F7002B7405 /* main.m */,
 				6052162D2C1AE6B700C409FA /* 3rdparty */,
 				605215F02C1AE3CB00C409FA /* utils */,
 				605215F72C1AE42600C409FA /* opengl */,
@@ -276,7 +277,6 @@
 				605215EA2C1AE33800C409FA /* ViewController.xib */,
 				60C11E192C19E32C0046F281 /* LaunchScreen.storyboard */,
 				60C11E1C2C19E32C0046F281 /* Info.plist */,
-				60C11E1D2C19E32C0046F281 /* main.m */,
 			);
 			path = "VideoPlayer-IOS";
 			sourceTree = "<group>";
@@ -370,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6040AD5B2C1C39F7002B7405 /* main.m in Sources */,
 				605216482C1AE6B700C409FA /* pngrutil.c in Sources */,
 				6052163D2C1AE6B700C409FA /* png.c in Sources */,
 				6052164D2C1AE6B700C409FA /* pngwrite.c in Sources */,
@@ -392,7 +393,6 @@
 				6052164F2C1AE6B700C409FA /* pngwutil.c in Sources */,
 				605216472C1AE6B700C409FA /* pngrtran.c in Sources */,
 				605216422C1AE6B700C409FA /* pngmem.c in Sources */,
-				60C11E1E2C19E32C0046F281 /* main.m in Sources */,
 				6052164C2C1AE6B700C409FA /* pngwio.c in Sources */,
 				605216442C1AE6B700C409FA /* pngpread.c in Sources */,
 				605216412C1AE6B700C409FA /* pngget.c in Sources */,
@@ -541,7 +541,7 @@
 				INFOPLIST_FILE = "VideoPlayer-IOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -569,7 +569,7 @@
 				INFOPLIST_FILE = "VideoPlayer-IOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
